@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 2px 4px #000000;
+  z-index: 1000;
 }
 
 .branded {
@@ -134,7 +135,7 @@ h2 {
 .content {
   width: 375px;
   height: 500px;
-  margin: 4.5rem 1rem 1.5rem 1rem;
+  margin: 4.5rem 1rem 2.4rem 1rem;
   background-color: brown;
   border-radius: 10px;
   padding: 10px 10px 0px 10px;
