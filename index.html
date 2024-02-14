@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Suhu</title>
+
+    <!-- Image Logo Page Start -->
+    <link rel="website icon" type="png" href="assets/My Logo.png">
+    <!-- Image Logo Page End -->
+
+    <!-- CSS Start -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- CSS End -->
+</head>
+<body>
+    <!-- Navbar Start -->
+    <nav id="navigation-bar">
+        <div class="branded">
+            <img src="assets/My Logo.png" alt="Logo" width="30">
+            <p id="brand">Aidil Muhamad</p>
+        </div>
+        <ul class="nav-link">
+            <li><a id="cara-kalkulasi" href="#">Lihat Cara Kalkulasi</a></li>
+            <li><a id="rumus" href="#">Lihat Rumus</a></li>
+        </ul>
+        <button class="bar" onclick="toggleNavbar()">
+            <img src="assets/bar.png" alt="bar" width="30">
+            <div class="nebar"></div>
+        </button>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Contennt Start -->
+    <div class="main">
+        <div class="content">
+            <h2>Kalkulator Suhu</h2>
+            <p>Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).</p>
+            <div id="input-field">
+                <label for="input-value" id="input-label">Celcius (&deg;C):</label>
+                <textarea type="number" name="input-value" id="input-value" cols="33" rows="3"></textarea>
+                <button id="konversi" onclick="calculateDisplay()">Konversi</button>
+                <button id="reset" onclick="clearDisplay()">Reset</button>
+                <button id="reverse" onclick="reverseDisplay()">Reverse</button>
+            </div>
+            <div id="output-field">
+                <label for="output-value" id="output-label">Fahrenheit (&deg;F):</label>
+                <textarea readonly type="number" name="output-value" id="output-value" cols="33" rows="3"></textarea>
+            </div>
+            <div id="output-hasil">
+                <label for="output-kalkulasi">Cara Kalkulasi</label>
+                <textarea readonly type="number" name="output-kalkulasi" id="output-kalkulasi" cols="33" rows="3"></textarea>
+            </div>
+        </div>
+        <div id="displayImage1">
+            <img id="img-rumus" src="assets/rumus.png" alt="Rumus Konversi Suhu">
+        </div>
+        <div id="displayImage2">
+            <img id="img-kalkulasi" src="assets/cara-kalkulasi.png" alt="Cara Kalkulasi">
+        </div>
+    </div>
+    <!-- Content End -->
+    
+    <!-- Footer Start -->
+    <footer>
+        <p class="foot">Copyright &copy; 2024 by <a href="https://aidil521.github.io/aidilmuhamad.github.io">Aidil Muhamad</a></p>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Start -->
+    <script src="JS/script.js"></script>
+    <!-- JavaScript End -->
+</body>
+</html>
