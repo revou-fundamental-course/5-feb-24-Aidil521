@@ -20,9 +20,9 @@ body {
   float: left;
   display: flex;
   align-items: center;
-  padding-left: 12px;
+  padding: 8px 12px;
   box-sizing: border-box;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
   font-family: Calibri, "Trebuchet MS", sans-serif;
   color: white;
@@ -30,10 +30,15 @@ body {
   box-sizing: border-box;
 }
 
+#brand {
+  padding: 0 8px;
+  margin: 0;
+}
+
 .nav-link {
   display: flex;
   list-style: none;
-  padding: 0 30px;
+  padding: 0 15px;
   font-family: Calibri, "Trebuchet MS", sans-serif;
   box-sizing: border-box;
 }
@@ -75,7 +80,7 @@ body {
     flex-direction: column;
     text-align: justify;
     position: absolute;
-    top: 32px;
+    top: 30px;
     background-color: rgb(85, 94, 94);
     border-radius: 0 0 8px 0;
     padding: 0;
@@ -86,7 +91,7 @@ body {
   .nav-link li {
     margin: 0;
     border-top: 1px solid white;
-    padding: 5px 20px 5px 42px;
+    padding: 5px 48px 5px 48px;
     cursor: pointer;
     box-sizing: border-box;
   }
