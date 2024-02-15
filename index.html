@@ -18,7 +18,7 @@
     <nav id="navigation-bar">
         <div class="branded">
             <img src="assets/My Logo.png" alt="Logo" width="30">
-            <p id="brand">Aidil Muhamad</p>
+            <a href="https://aidil521.github.io/aidilmuhamad.github.io/" id="brand">Aidil Muhamad</a>
         </div>
         <ul class="nav-link">
             <li><a id="cara-kalkulasi" href="#">Lihat Cara Kalkulasi</a></li>
@@ -26,7 +26,6 @@
         </ul>
         <button class="bar" onclick="toggleNavbar()">
             <img src="assets/bar.png" alt="bar" width="30">
-            <div class="nebar"></div>
         </button>
     </nav>
     <!-- Navbar End -->
@@ -35,7 +34,9 @@
     <div class="main">
         <div class="content">
             <h2 class="name-project">Kalkulator Suhu</h2>
-            <p>Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).</p>
+            <p>
+                Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).
+            </p>
             <div id="input-field">
                 <label for="input-value" id="input-label">Celcius (&deg;C):</label>
                 <textarea type="number" name="input-value" id="input-value" cols="33" rows="3"></textarea>
@@ -57,7 +58,7 @@
             <h4>Celcius ke Fahrenheit</h4>
             <p class="celcius-kaonversi">
                 Misalkan, diketahui suatu zat diukur menggunakan termometer dengan satuan suhu Celcius adalah 90&deg;C. Konversi nilai suhu 90&deg;C ke satuan Fahrenheit dapat dilakukan melalui cara berikut:
-                <pre>90&deg;C = (9/5) * 90 + 32&deg;F</pre>
+                <pre>90&deg;C = (90 * (9/5)) + 32&deg;F</pre>
                 <pre>     = (810/5) + 32&deg;F</pre>
                 <pre>     = 162 + 32&deg;F</pre>
                 <pre>     = 140&deg;F</pre>
@@ -66,17 +67,17 @@
             <h4>Fahrenheit ke Celcius</h4>
             <p class="fahrenheit-kaonversi">
                 Sekarang beralih ke cara konversi suhu dengan satuan Fahrenheit (&deg;F) ke satuan derajat Celcius (&deg;C). Diketahui suhu suatu zat yang diukur menggunakan termometer dengan satuan Fahrenheit adalah 176&deg;F. Cara konversi nilai tersebut dalam satuan satuan suhu derajat Celcius adalah sebagai berikut:
-                <pre>176&deg;F = (5/9) * (176 - 32)&deg;C</pre>
-                <pre>      = (810/9) * 144&deg;C</pre>
-                <pre>      = 720/9&deg;C</pre>
+                <pre>176&deg;F = (176 - 32)&deg;C * (5/9)</pre>
+                <pre>      = 144&deg;C * (5/9)</pre>
+                <pre>      = (720/9)&deg;C</pre>
                 <pre>      = 80&deg;C</pre>
             </p>
         </div>
         <div id="displayImage2">
             <h2 class="title-rumus">Rumus &deg;C ke &deg;F</h2>
-            <pre class="lihat-rumus">S<sub>(&deg;C)</sub> = ((9/5) * S<sub>(&deg;C)</sub>) + 32&deg;F</pre>
+            <pre class="lihat-rumus">S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> * (9/5)) + 32</pre>
             <h2 class="title-rumus">Rumus &deg;F ke &deg;C</h2>
-            <pre class="lihat-rumus">S<sub>(&deg;F)</sub> = (5/9) * (S<sub>(&deg;F)</sub> - 32)&deg;C</pre>
+            <pre class="lihat-rumus">S<sub>(&deg;C)</sub> = (S<sub>(&deg;F)</sub> - 32) * (5/9)</pre>
         </div>
     </div>
     <!-- Content End -->
