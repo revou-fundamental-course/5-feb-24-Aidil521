@@ -232,6 +232,7 @@ h4, .celcius-kaonversi, .fahrenheit-kaonversi {
 
 #displayImage1 {
   width: 380px;
+  height: auto;
   position: absolute;
   margin-top: 7rem;
   display: none;
@@ -245,6 +246,7 @@ h4, .celcius-kaonversi, .fahrenheit-kaonversi {
 
 #displayImage2 {
   width: 350px;
+  height: auto;
   position: absolute;
   margin-top: 7rem;
   display: none;
