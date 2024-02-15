@@ -34,7 +34,7 @@
     <!-- Contennt Start -->
     <div class="main">
         <div class="content">
-            <h2>Kalkulator Suhu</h2>
+            <h2 class="name-project">Kalkulator Suhu</h2>
             <p>Masukan suhu derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F).</p>
             <div id="input-field">
                 <label for="input-value" id="input-label">Celcius (&deg;C):</label>
@@ -53,10 +53,30 @@
             </div>
         </div>
         <div id="displayImage1">
-            <img id="img-rumus" src="assets/rumus.png" alt="Rumus Konversi Suhu">
+            <h3>Contoh Kalkulasi Konversi Suhu</h3>
+            <h4>Celcius ke Fahrenheit</h4>
+            <p class="celcius-kaonversi">
+                Misalkan, diketahui suatu zat diukur menggunakan termometer dengan satuan suhu Celcius adalah 90&deg;C. Konversi nilai suhu 90&deg;C ke satuan Fahrenheit dapat dilakukan melalui cara berikut:
+                <pre>90&deg;C = (9/5) * 90 + 32&deg;F</pre>
+                <pre>     = (810/5) + 32&deg;F</pre>
+                <pre>     = 162 + 32&deg;F</pre>
+                <pre>     = 140&deg;F</pre>
+            </p>
+
+            <h4>Fahrenheit ke Celcius</h4>
+            <p class="fahrenheit-kaonversi">
+                Sekarang beralih ke cara konversi suhu dengan satuan Fahrenheit (&deg;F) ke satuan derajat Celcius (&deg;C). Diketahui suhu suatu zat yang diukur menggunakan termometer dengan satuan Fahrenheit adalah 176&deg;F. Cara konversi nilai tersebut dalam satuan satuan suhu derajat Celcius adalah sebagai berikut:
+                <pre>176&deg;F = (5/9) * (176 - 32)&deg;C</pre>
+                <pre>      = (810/9) * 144&deg;C</pre>
+                <pre>      = 720/9&deg;C</pre>
+                <pre>      = 80&deg;C</pre>
+            </p>
         </div>
         <div id="displayImage2">
-            <img id="img-kalkulasi" src="assets/cara-kalkulasi.png" alt="Cara Kalkulasi">
+            <h2 class="title-rumus">Rumus &deg;C ke &deg;F</h2>
+            <pre class="lihat-rumus">S<sub>(&deg;C)</sub> = ((9/5) * S<sub>(&deg;C)</sub>) + 32&deg;F</pre>
+            <h2 class="title-rumus">Rumus &deg;F ke &deg;C</h2>
+            <pre class="lihat-rumus">S<sub>(&deg;F)</sub> = (5/9) * (S<sub>(&deg;F)</sub> - 32)&deg;C</pre>
         </div>
     </div>
     <!-- Content End -->

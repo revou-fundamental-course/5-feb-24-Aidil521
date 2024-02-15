@@ -85,8 +85,8 @@ document.addEventListener('click', function(event) {
     let isImageClick1 = event.target === displayImage1;
     let isImageClick2 = event.target === displayImage2;
 
-    let isToggleButtonClick1 = event.target === toggleRumus;
-    let isToggleButtonClick2 = event.target === toggleKalkulasi;
+    let isToggleButtonClick1 = event.target === toggleKalkulasi;
+    let isToggleButtonClick2 = event.target === toggleRumus;
 
     if (!isImageClick1 && !isToggleButtonClick1) {
         displayImage1.style.display = 'none';
@@ -106,9 +106,9 @@ displayImage2.addEventListener('click', function(event) {
 });
 
 toggleRumus.addEventListener('click', function() {
-    displayImage1.style.display = (displayImage1.style.display === 'none') ? 'block' : 'none';
+    displayImage2.style.display = (displayImage2.style.display === 'none') ? 'block' : 'none';
 });
 
 toggleKalkulasi.addEventListener('click', function() {
-    displayImage2.style.display = (displayImage2.style.display === 'none') ? 'block' : 'none';
+    displayImage1.style.display = (displayImage1.style.display === 'none') ? 'block' : 'none';
 });
